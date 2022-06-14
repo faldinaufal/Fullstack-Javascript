@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Komik Popular</title>
+</head>
+
+<style>
+    .container {
+        display: grid;
+        height: 100%;
+        align-content: center;
+        grid-template-columns: 100% ;
+        justify-content: space-between;
+        gap: 12px;
+        margin: 50px 180px; 
+    }
+
+    .main h1 {
+        font-size: 18px;
+        padding-left: 8px;
+        padding-bottom: 10px;
+        color: rgb(228, 228, 228);
+        border-bottom: 1px solid;
+    }
+
+    .main {
+        background-color: rgba(59, 59, 59, 0.8);
+        width: 100%;
+        text-align: left;
+        padding-bottom: 20px;
+    }
+
+    .main-div {
+        display: grid;
+        align-content: center;
+        grid-template-columns: 33% 33% 33%;
+        row-gap: 20px;
+    }
+
+    .main-div li {
+        display:flex;
+        font-size: 20px;
+        padding-left: 20px;
+        gap: 20px;
+        color: #dfdfdf;
+    }
+
+    .main-div li a {
+        text-decoration: none;
+        color: #dfdfdf;
+        padding-top: 20px;
+    }
+
+</style>
+
+<header>
+    <nav>
+        <div id="navbar">
+            <img src="/asset/logo.jpg" alt="" width="50px">
+            <a href="index.html"><b>HansKomik</b></a>
+            <div class="search-box">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><img src="/asset/search-button.png" alt="" width="24px"></button>
+            </div>
+        </div>
+        <div id="navbar2">
+            <ul>
+                <li><a href="index.html">Komik Terbaru</a></li>
+                <li><a href="daftar-komik.html">Daftar Komik</a></li>
+                <li><a href="popular.html">Komik Populer</a></li>
+            </ul>
+            <div class="menubar">
+                <!-- <input type="checkbox"> -->
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <h1>Komik Populer</h1>
+            <div>
+                <ol class="main-div">
+                    <li>
+                        <img src="/asset/tensura logo.jpg" alt="" width="90px">
+                        <a href="tensura.html">Tensei Shitara Slime Datta Ken</a>
+                    </li>
+                    <li>
+                        <img src="/asset/Solo Leveling Logo.webp" alt="" width="90px">
+                        <p>Solo Leveling</p>
+                    </li>
+                    <li>
+                        <img src="/asset/One-Piece-Logo.webp" alt="" width="90px">
+                        <p>One Piece</p>
+                    </li>
+                    <li>
+                        <img src="/asset/kingdom.jpg" alt="" width="90px">
+                        <p>Kingdom</p>
+                    </li>
+                    <li>
+                        <img src="/asset/martial-peak.jpg" alt="" width="90px">
+                        <p>Martial Peak</p>
+                    </li>
+                    <li>
+                        <img src="/asset/Komik-The-Beginning-After-the-End.webp" alt="" width="90px">
+                        <p>The Beginning After The End</p>
+                    </li>
+                    <li>
+                        <img src="/asset/Komik-Nano-Machine.webp" alt="" width="90px">
+                        <p>Nano Machine</p>
+                    </li>
+                    <li>
+                        <img src="/asset/evil-god.jpg" alt="" width="90px">
+                        <p>I'm An Evil God</p>
+                    </li>
+                    <li>
+                        <img src="/asset/btth.png" alt="" width="90px">
+                        <p>Battle Through The Heavens</p>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</body>
+
+<footer>
+    <div>
+        <P>Copyright ©2022 Farhan Aldi</P>
+    </div>
+</footer>
+
+</html>
