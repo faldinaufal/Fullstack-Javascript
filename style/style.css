@@ -53,12 +53,26 @@ body{
 
 #navbar {
     display: flex;
+    width: 100%;
     overflow: hidden;
     background-color: grey;
     align-items: center;
     margin: -8px -10px 0px -10px;
-    padding: 0 100px 0 100px;
+    padding-left: 150px;
     gap: 10px;
+
+}
+
+#navbar input {
+    padding: 3px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border-style: groove;
+    width: 200px;
+    height: 17px;
 }
 
 #navbar a {
@@ -233,7 +247,7 @@ body{
 }
 
 .menubar {
-    /* display:none; */
+    display:none;
     flex-direction: column;
     height: 30px;
     justify-content: space-between;
@@ -261,4 +275,23 @@ footer {
     text-align: center;
     color: #f2f2f2;
     font-size: 18px;
+}
+
+@media screen and (max-width: 1080) {
+    .menubar span {
+        display: none;
+    }
+}
+  
+@media screen and (max-width: 576px) {
+    .menubar {
+        display: flex;
+    }
+    #navbar ul {
+        display: none ;
+    }
+}
+  
+@media screen and (max-width: 768px) {
+    
 }
