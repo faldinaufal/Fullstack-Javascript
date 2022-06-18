@@ -270,7 +270,7 @@ body{
     right: -1px;
     width: 30px;
     height: 30px;
-    opacity: 0;
+    /* opacity: 0; */
     cursor: pointer;
 }
 
@@ -399,8 +399,6 @@ footer {
 
     .menubar input {
         position: absolute;
-        /* top: 0; */
-        /* right: -88px; */
     }
 
     .konten h1 {
