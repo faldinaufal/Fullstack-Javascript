@@ -216,7 +216,7 @@ body{
 
 #navbar .search-box {
     position: absolute;
-    right: 250px;
+    right: 200px;
 }
 
 #navbar .search-box input {
@@ -236,11 +236,6 @@ body{
     position: absolute;
     right: 20px;
     cursor: pointer;
-}
-
-.menubar input {
-    width: 50px;
-    height: 50px;
 }
 
 .menubar span {
@@ -344,6 +339,18 @@ footer {
         width: 500px;
         height: 50px;
     }
+
+    .contact-section {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .contact-section input {
+        padding: 3px;
+        width: 375px;
+        height: 30px;
+    }
 }
   
 @media screen and (max-width: 576px) {
@@ -357,6 +364,7 @@ footer {
 
     #navbar .search-box {
         display: none;
+
     }
 
     #navbar2 a {
@@ -397,7 +405,7 @@ footer {
     .menubar input {
         position: absolute;
         top: 0;
-        right: -88px;
+        right: -68px;
     }
 
     .konten h1 {
