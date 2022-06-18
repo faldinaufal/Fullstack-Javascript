@@ -81,39 +81,15 @@ body{
     font-size: 26px;
 }
 
-#navbar2 {
-    display: flex;
-    overflow: hidden;
-    background-color: rgb(162, 68, 68);
-    align-items: left;
-    margin: 0px -10px 0px -10px;
-    padding: 0px 200px 0px 200px;
-}
-
 #navbar p {
     color: #f2f2f2;
     font-size: 20px;
     padding-left: 18px;
 }
 
-#navbar2 a {
-    align-items: center;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 12px;
-    margin: 4px;
-    text-decoration: none;
-    background-color: none;
-}
 
 .mobile {
     display: none;
-}
-
-#navbar2 ul {
-    display: flex;
-    list-style: none;
-    gap: 0px;
 }
 
 .sidebar ol li a {
@@ -262,6 +238,11 @@ body{
     cursor: pointer;
 }
 
+.menubar input {
+    width: 50px;
+    height: 50px;
+}
+
 .menubar span {
     display: block;
     background-color: rgb(0, 0, 0);
@@ -284,12 +265,89 @@ footer {
     text-align: center;
 }
 
-@media screen and (max-width: 1080) {
+@media screen and (min-width: 921px) {
+    #navbar2 a {
+        align-items: center;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 12px;
+        margin: 4px;
+        text-decoration: none;
+        background-color: none;
+    }
+  
+    #navbar2 {
+        display: flex;
+        overflow: hidden;
+        background-color: rgb(162, 68, 68);
+        align-items: left;
+        margin: 0px -10px 0px -10px;
+        padding: 0px 200px 0px 200px;
+    }
 
+    #navbar2 ul {
+        display: flex;
+        list-style: none;
+        gap: 0px;
+    }
+
+    .main-div {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        row-gap: 20px;
+    }
+
+    .container {
+        gap: 12px;
+        margin: 50px 180px;
+    }
+
+    .utama-div {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        row-gap: 20px;
+    }
+
+    .kolom {
+        display: grid;
+        height: 100%;
+        align-content: center;
+        grid-template-columns: 100% ;
+        justify-content: space-between;
+        gap: 12px;
+        margin: 50px 180px; 
+    }
+
+    .logo img {
+        width: 200px;
+    }
+
+    .maindiv {
+        display: grid;
+        align-content: center;
+        grid-template-columns: 25% 75%;
+        row-gap: 20px;
+    }
+
+    .body {
+        padding-right: 50px;
+    }
+
+    .comment-section {
+        display: flex;
+        padding-left: 20px;
+        gap: 40px;
+    }
+
+    .comment-section input {
+        padding: 3px;
+        width: 500px;
+        height: 50px;
+    }
 }
   
 @media screen and (max-width: 576px) {
-  
+
 }
   
 @media screen and (max-width: 920px) {
@@ -301,8 +359,29 @@ footer {
         display: none;
     }
 
+    #navbar2 a {
+        align-items: center;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 12px;
+        margin: 4px;
+        text-decoration: none;
+        background-color: none;
+    }
+  
     #navbar2 {
         display: none;
+        overflow: hidden;
+        background-color: rgb(162, 68, 68);
+        align-items: left;
+        margin: 0px -10px 0px -10px;
+        padding: ;
+    }
+
+    #navbar2 ul {
+        display: flex;
+        list-style: none;
+        gap: 0px;
     }
 
     .kotak-div {
@@ -311,6 +390,14 @@ footer {
 
     .menubar {
         display: flex;
+        width: 50px;
+        
+    }
+
+    .menubar input {
+        position: absolute;
+        top: 0;
+        right: -88px;
     }
 
     .konten h1 {
@@ -319,6 +406,7 @@ footer {
 
     .container {
         display: flex;
+        margin: 15px 25px;
     }
 
     .main h1 {
@@ -327,12 +415,25 @@ footer {
 
     .main-div {
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+        row-gap: 15px;
+    }
+
+    .logo img {
+        padding-top: 60px;
+        width: 150px;
     }
 
     .kolom {
-        display: table-row;
+        display: grid;
+        height: 100%;
+        align-content: center;
+        grid-template-columns: 100% ;
+        justify-content: space-between;
+        gap: 12px;
+        margin: 15px 25px; 
     }
+
 
     .kolom h1 {
         padding-top: 10px;
@@ -340,6 +441,30 @@ footer {
 
     .utama-div {
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+        row-gap: 15px;
+    }
+
+    .maindiv {
+        display: grid;
+        align-content: center;
+        grid-template-columns: 35% auto;
+        row-gap: 20px;
+    }
+
+    .body {
+        padding-right: 25px;
+    }
+
+    .comment-section {
+        display: flex;
+        padding-left: 20px;
+        gap: 25px;
+    }
+
+    .comment-section input {
+        padding: 3px;
+        width: 375px;
+        height: 50px;
     }
 }
