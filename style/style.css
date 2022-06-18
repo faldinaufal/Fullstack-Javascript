@@ -267,7 +267,9 @@ input.box {
     height: 30px;
     opacity: 1;
     cursor: pointer;
+    z-index: 99;
 }
+
 .menubar span {
     display: block;
     background-color: rgb(0, 0, 0);
