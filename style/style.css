@@ -85,7 +85,7 @@ body{
     display: flex;
     overflow: hidden;
     background-color: rgb(162, 68, 68);
-    align-items: center;
+    align-items: left;
     margin: 0px -10px 0px -10px;
     padding: 0px 200px 0px 200px;
 }
@@ -106,10 +106,14 @@ body{
     background-color: none;
 }
 
+.mobile {
+    display: none;
+}
+
 #navbar2 ul {
     display: flex;
     list-style: none;
-    gap: 20px;
+    gap: 0px;
 }
 
 .sidebar ol li a {
@@ -235,7 +239,8 @@ body{
 }
 
 #navbar .search-box {
-    float: right;
+    position: absolute;
+    right: 250px;
 }
 
 #navbar .search-box input {
@@ -249,10 +254,11 @@ body{
 .menubar {
     display:none;
     flex-direction: column;
-    height: 30px;
+    top: 15px;
+    height: 20px;
     justify-content: space-between;
     position: absolute;
-    right: 40px;
+    right: 20px;
     cursor: pointer;
 }
 
@@ -272,26 +278,68 @@ body{
 }
 
 footer {
+    bottom: 0;
+    width: 100%;
+    color: white;
     text-align: center;
-    color: #f2f2f2;
-    font-size: 18px;
 }
 
 @media screen and (max-width: 1080) {
-    .menubar span {
-        display: none;
-    }
+
 }
   
 @media screen and (max-width: 576px) {
+  
+}
+  
+@media screen and (max-width: 920px) {
+    #navbar {
+        padding: 0px 20px 0px 20px;
+    }
+
+    #navbar .search-box {
+        display: none;
+    }
+
+    #navbar2 {
+        display: none;
+    }
+
+    .kotak-div {
+        display: table-row;
+    }
+
     .menubar {
         display: flex;
     }
-    #navbar ul {
-        display: none ;
+
+    .konten h1 {
+        padding-top: 10px;
     }
-}
-  
-@media screen and (max-width: 768px) {
-    
+
+    .container {
+        display: flex;
+    }
+
+    .main h1 {
+        padding-top: 10px;
+    }
+
+    .main-div {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .kolom {
+        display: table-row;
+    }
+
+    .kolom h1 {
+        padding-top: 10px;
+    }
+
+    .utama-div {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
 }
