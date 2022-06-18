@@ -3,6 +3,7 @@ body{
     height: 100%;
     background-size: cover;
     font-size: 18px;
+    /* overflow-x: hidden; */
 }
 
 .kotak-div {
@@ -52,15 +53,15 @@ body{
 }
 
 #navbar {
-    display: flex;
+    /* display: flex;
     width: 100%;
     overflow: hidden;
     background-color: grey;
     align-items: center;
     margin: -8px -10px 0px -10px;
     padding-left: 150px;
-    gap: 10px;
-
+    gap: 10px; */
+    display: flex;
 }
 
 #navbar input {
@@ -214,6 +215,31 @@ body{
     color: #dfdfdf;
 }
 
+#navbar2 a {
+    align-items: center;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 12px;
+    margin: 4px;
+    text-decoration: none;
+    background-color: none;
+}
+
+#navbar2 {
+    display: flex;
+    overflow: hidden;
+    background-color: rgb(162, 68, 68);
+    align-items: left;
+    margin: 0px -10px 0px -10px;
+    padding: 0px 200px 0px 200px;
+}
+
+#navbar2 ul {
+    display: flex;
+    list-style: none;
+    gap: 0px;
+}
+
 #navbar .search-box {
     position: absolute;
     right: 200px;
@@ -223,21 +249,30 @@ body{
     background-color: grey;
 }
 
-#navbar .search-box button {
+/* #navbar .search-box button {
   
-}
+} */
 
 .menubar {
-    display:none;
+    display: none;
     flex-direction: column;
     top: 15px;
-    height: 20px;
+    height: 30px;
     justify-content: space-between;
     position: absolute;
     right: 20px;
     cursor: pointer;
 }
 
+.menubar input {
+    position: absolute;
+    top: -4px;
+    right: -1px;
+    width: 30px;
+    height: 30px;
+    /* opacity: 0; */
+    cursor: pointer;
+}
 .menubar span {
     display: block;
     background-color: rgb(0, 0, 0);
@@ -261,31 +296,6 @@ footer {
 }
 
 @media screen and (min-width: 921px) {
-    #navbar2 a {
-        align-items: center;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 12px;
-        margin: 4px;
-        text-decoration: none;
-        background-color: none;
-    }
-  
-    #navbar2 {
-        display: flex;
-        overflow: hidden;
-        background-color: rgb(162, 68, 68);
-        align-items: left;
-        margin: 0px -10px 0px -10px;
-        padding: 0px 200px 0px 200px;
-    }
-
-    #navbar2 ul {
-        display: flex;
-        list-style: none;
-        gap: 0px;
-    }
-
     .main-div {
         display: grid;
         grid-template-columns: 33% 33% 33%;
@@ -376,14 +386,13 @@ footer {
         text-decoration: none;
         background-color: none;
     }
-  
+
     #navbar2 {
         display: none;
         overflow: hidden;
         background-color: rgb(162, 68, 68);
         align-items: left;
         margin: 0px -10px 0px -10px;
-        padding: ;
     }
 
     #navbar2 ul {
@@ -398,14 +407,10 @@ footer {
 
     .menubar {
         display: flex;
-        width: 50px;
-        
     }
 
     .menubar input {
         position: absolute;
-        top: 0;
-        right: -68px;
     }
 
     .konten h1 {
