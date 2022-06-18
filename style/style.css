@@ -12,7 +12,7 @@ body{
     grid-template-columns: 70% 30% ;
     justify-content: space-between;
     gap: 12px;
-    margin: 50px 130px; 
+    margin: 30px 130px; 
 }
 
 .konten  {
@@ -58,9 +58,8 @@ body{
     background-color: grey;
     align-items: center;
     margin: -8px -10px 0px -10px;
-    padding-left: 150px;
+    padding: 0px 150px;
     gap: 10px;
-
 }
 
 .search-box input {
@@ -219,42 +218,61 @@ input.box {
     color: #dfdfdf;
 }
 
+
+
+
 #navbar .search-box {
     position: absolute;
     right: 200px;
 }
 
 #navbar .search-box input {
-    background-color: grey;
+    background-color: rgb(175, 175, 175);
 }
 
-#navbar .search-box button {
-  
+
+#navbar2 ul {
+    display: flex;
+    list-style: none;
+    gap: 0px;
+}
+
+#navbar2 a {
+    align-items: center;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 12px;
+    margin: 4px;
+    text-decoration: none;
+    background-color: none;
 }
 
 .menubar {
-    display:none;
+    display: none;
     flex-direction: column;
     top: 15px;
-    height: 20px;
+    height: 25px;
     justify-content: space-between;
     position: absolute;
     right: 20px;
     cursor: pointer;
-}
-
-.menubar span {
-    display: block;
-    background-color: rgb(0, 0, 0);
-    width: 30px;
-    height: 3px;
+    z-index: 99;
 }
 
 .menubar input {
     position: absolute;
-    top: 0;
-    right: 5px;
+    top: -4px;
+    right: -3px;
+    width: 33px;
+    height: 30px;
     opacity: 1;
+    cursor: pointer;
+}
+.menubar span {
+    display: block;
+    background-color: rgb(0, 0, 0);
+    width: 28px;
+    height: 3px;
 }
 
 .box {
@@ -278,45 +296,21 @@ footer {
     text-align: center;
 }
 
-#navbar {
-    padding: 0px 20px 0px 20px;
-}
-
-#navbar .search-box {
-    display: none;
-
-}
 
 @media screen and (min-width: 921px) {
-    #navbar2 a {
-        align-items: center;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 12px;
-        margin: 4px;
-        text-decoration: none;
-        background-color: none;
+    .main-div {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        row-gap: 20px;
     }
-  
+
     #navbar2 {
         display: flex;
         overflow: hidden;
         background-color: rgb(162, 68, 68);
         align-items: left;
         margin: 0px -10px 0px -10px;
-        padding: 0px 100px;
-    }
-
-    #navbar2 ul {
-        display: flex;
-        list-style: none;
-        gap: 0px;
-    }
-
-    .main-div {
-        display: grid;
-        grid-template-columns: 33% 33% 33%;
-        row-gap: 20px;
+        padding: 0px 120px;
     }
 
     .container {
@@ -352,7 +346,7 @@ footer {
     }
 
     .body {
-        padding-right: 50px;
+        padding-right: 40px;
     }
 
     .comment-section {
@@ -380,8 +374,29 @@ footer {
     }
 }
   
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 1100px) {
+    .container {
+        display: flex;
+        margin: 20px 70px;
+    }
 
+    .kolom {
+        display: grid;
+        height: 100%;
+        align-content: center;
+        grid-template-columns: 100% ;
+        justify-content: space-between;
+        gap: 12px;
+        margin: 20px 70px; 
+    }
+
+    .kotak-div {
+        margin: 20px 50px;
+    }
+
+    .maindiv {
+        grid-template-columns: 35% 65%;
+    }
 }
   
 @media screen and (max-width: 920px) {
@@ -390,30 +405,74 @@ footer {
         display: flex;
     }
 
+    #navbar {
+        padding: 0px 30px;
+    }
+
+    #navbar2 {
+        display: flex;
+    }
+    
+    .search-box {
+        display: none;
+    }
+
     #navbar2 a {
         align-items: center;
         color: #f2f2f2;
         text-align: center;
+        padding: 12px;
         margin: 4px;
         text-decoration: none;
         background-color: none;
-        padding-left: 50px;
-    }
-  
-    #navbar2 {
-        display: flex;
-        overflow: hidden;
-        background-color: rgb(162, 68, 68);
-        align-items: center;
-        margin: 0px -10px;;
+        padding-left: 20px;
     }
 
-    /* #navbar2 ul {
-        display: grid;
-        font-size: 17px;
-        list-style: none;
-        grid-template-columns: auto auto auto auto auto;
-    } */
+    #navbar2 ul {
+        display: flex;
+        overflow: hidden;
+        align-items: left;
+        gap: 20px;
+    }
+
+    .menubar span {
+        transition: all 0.75s;
+        -webkit-transition: all 0.75s;
+        -moz-transition: all 0.75s;
+        -ms-transition: all 0.75s;
+        -o-transition: all 0.75s;
+}
+
+    .menubar span:nth-child(2) {
+        transform-origin: 0 0;
+    }
+
+    .menubar span:nth-child(4) {
+        transform-origin: 0 0;
+    }
+
+    .menubar input:checked ~ span:nth-child(2) {
+        background-color: #dfdfdf;
+        transform: rotate(45deg) translate(3px, 0px);
+        -webkit-transform: rotate(45deg) translate(3px, 0px);
+        -moz-transform: rotate(45deg) translate(3px, 0px);
+        -ms-transform: rotate(45deg) translate(3px, 0px);
+        -o-transform: rotate(45deg) translate(3px, 0px);
+    } 
+    
+    .menubar input:checked ~ span:last-child {
+        background-color: #dfdfdf;
+        transform: rotate(-45deg) translate(0px, 1px);
+        -webkit-transform: rotate(-45deg) translate(0px, 1px);
+        -moz-transform: rotate(-45deg) translate(0px, 1px);
+        -ms-transform: rotate(-45deg) translate(0px, 1px);
+        -o-transform: rotate(-45deg) translate(0px, 1px);
+    }  
+
+    .menubar input:checked ~ span:nth-child(3) {
+        opacity: 0;
+    }  
+
 
     #navbar2 ul {
         display: flex;
@@ -437,10 +496,9 @@ footer {
         -moz-transition: all 0.75s;
         -ms-transition: all 0.75s;
         -o-transition: all 0.75s;
-    }
+}
 
-    .slide {
-        opacity: 1;
+    #navbar2 .slide {
         transform: translate(0%);
         -webkit-transform: translate(0%);
         -moz-transform: translate(0%);
@@ -450,6 +508,15 @@ footer {
 
     .kotak-div {
         display: table-row;
+    }
+
+    .menubar {
+        display: flex;
+    }
+
+    .menubar input {
+        position: absolute;
+        opacity: 0;
     }
 
     .konten h1 {
